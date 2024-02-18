@@ -1,7 +1,3 @@
-# Python standard library packages
-os
-csv
-
 # Third-party packages
 requests
 Flask
