@@ -140,14 +140,12 @@ def start_routing():
     end_address = "7455 Birchmount Road, Markham, Ontario"
     addressList = [start_address, end_address]
 
-    print(addressList)
     if not addressList:
         return jsonify({'error': 'Address parameter is required'}), 400
 
     coordinates = []
 
     for address in addressList:
-        print(address)
         geocode_url = f'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={apikey}'
         response = requests.get(geocode_url)
 
