@@ -113,15 +113,15 @@ def process_transit_routes(origin, destination, shelters):
 
 @app.route("/")
 def hello_world():
-    variable = start_routing()
+    #variable = start_routing()
     #var = variable.content
-    print(dir(variable))
-    print(variable.json)
-    var = variable.json
-    response_content_str = str(var)
-    print(variable.data)
-    print(variable.response)
-    return "<p>"+response_content_str+"</p>"
+    #print(dir(variable))
+    #print(variable.json)
+    #var = variable.json
+    #response_content_str = str(var)
+    #print(variable.data)
+    #print(variable.response)
+    return "<p>welcome to the backend</p>"
 
 @app.route("/calculate", methods=['POST'])
 def start_routing():
