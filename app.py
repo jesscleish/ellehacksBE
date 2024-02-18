@@ -133,11 +133,11 @@ def start_routing():
     shelters = load_shelters_from_csv('ShelterData.csv')
 
     ## receive points from front end, convert to geopoints
-    #data = request.json  # Assuming JSON data is sent from the frontend
-    #start_address = data.get('startingLocation')
-    #end_address = data.get('destinationLocation')
-    start_address = "Unionville Go, Markham, Ontario"
-    end_address = "7455 Birchmount Road, Markham, Ontario"
+    data = request.json  # Assuming JSON data is sent from the frontend
+    start_address = data.get('startingLocation')
+    end_address = data.get('destinationLocation')
+    #start_address = "Unionville Go, Markham, Ontario"
+    #end_address = "7455 Birchmount Road, Markham, Ontario"
     addressList = [start_address, end_address]
 
     if not addressList:
